@@ -8,8 +8,8 @@ while True:
     # Get user input and strip space characters from it
     usr_action = input("Type add, show, edit, complete, delete or exit: ")
     usr_action = usr_action.strip()
-    # Open/Create the file then read it
 
+    # Open/Create the file then read it
     todos = functions.read_todos()
 
     # check if user action is "add"
@@ -51,6 +51,7 @@ while True:
             continue
         except ValueError:
             print("ValueError")
+            continue
 
     elif 'exit' == usr_action:
         break
